@@ -1,0 +1,8 @@
+package aabvance_basic;
+
+public class ChildClass extends BasicClass {
+	
+	public ChildClass(){ 
+		
+	}
+}

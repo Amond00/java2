@@ -1,0 +1,9 @@
+package factoryMethod;
+
+public class Dog extends Animal {
+	Dog() { }
+	public Dog(String data){ return; }
+	public void toString() { 
+		System.out.println("Dog");
+	}
+}

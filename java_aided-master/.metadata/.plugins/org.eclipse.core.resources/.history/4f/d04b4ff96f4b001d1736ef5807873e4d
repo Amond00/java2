@@ -1,0 +1,5 @@
+package aabvance_basic;
+
+public abstract class AbstractClass {
+	public abstract void method1();  
+}

@@ -1,0 +1,45 @@
+package aabvance_basic;
+
+public class BasicClass {
+	//멤버 변수(속성=필드)
+	int num = 1;
+	String name = "kim";
+	int point = 10;
+	
+	//생성자
+	public BasicClass() { }  //기본 생성자
+	public BasicClass(int num) { this.num = num; }
+	public BasicClass(int num, String name) {
+		//this.num = num;
+		//this.name = name;
+		this(num, name, 30);
+	}
+	public BasicClass(int num, String name, int point) {
+		this.num = num;
+		this.name = name;
+		this.point = point;
+	}
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getPoint() {
+		return point;
+	}
+	public void setPoint(int point) {
+		this.point = point;
+	}
+	@Override
+	public String toString() {
+		return super.toString();
+	}
+	
+}

@@ -1,0 +1,7 @@
+package builder;
+
+public class Jacket {
+	int number;
+	String name;
+	
+}

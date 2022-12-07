@@ -1,0 +1,12 @@
+package factoryMethod;
+
+import java.util.LinkedList;
+
+public class MapEx {
+	public static void main(String[] args) {
+		LinkedList<String> lnkList = new LinkedList<String>();
+		lnkList.add("Dog");
+		lnkList.add("Cat");
+		//"Dog", "Cat"
+	}
+}

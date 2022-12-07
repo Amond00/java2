@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/fn" %>
+<%@ page import="java.util.*, java.lang.*" %>
+<%@ page import="java.text.*, java.net.InetAddress" %>
+<%@ page import="com.example.*" %>
+<%@ include file="common.jsp" %>
+<%
+	String name = "김기태";
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSTL(Java Standard Tag Library)</title>
+</head>
+<body>
+<h1>JSTL(Java Standard Tag Library) : 자바 표준 태그 라이브러리</h1>
+<h2>function - 태그가 fn:으로 시작 </h2>
+<h3>fn(함수 - Function) - jsp에서 자주사용하는 함수를 사용할 때 지정</h3>
+<p>fn:함수명 으로 시작하여 /fn:함수명으로 끝나거나 열 때 /로 닫는다.</p>
+<%-- <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %> --%>
+<h4>fn:contains() : 주로 해당 변수 값이나 데이터에 특정 데이터가 있는지 검사할 때 활용</h4>
+<h4>fn:containsIgnoreCase() : 주로 해당 변수 값이나 데이터에 특정 데이터가 대소문자 구분없이 있는지 검사할 때 활용</h4>
+<h4>fn:endsWith() : 주로 해당 변수의 값이나 데이터에 특정 데이터로 끝나는지 검사할 때 활용</h4>
+<h4>fn:escapeXml() : XML 언어가 섞여 있을 경우 해독할 때 활용</h4>
+<h4>fn:indexOf() : 주로 해당 변수의 값이나 데이터에 특정 문자열의 위치를 반환받을 때 활용</h4>
+<h4>fn:trim() : 주로 해당 변수의 값이나 문자 데이터에 있는 앞 뒤의 공백을 제거할 때 활용</h4>
+<h4>fn:startsWith() : 주로 해당 변수의 값이나 데이터에 특정 데이터로시작하는지 검사할 때 활용</h4>
+<h4>fn:split() : 문자열 데이터를 배열 데이터로 분할</h4>
+<h4>fn:toLowerCase() : 소문자로 변환</h4>
+<h4>fn:toUpperCase() : 대문자로 변환</h4>
+<h4>fn:substring() : 특정 시작번째 부터 끝번째이전까지 문자를 반환할 때 사용</h4>
+<h4>fn:length() : 문자열의 길이 = 글자수를 반환할 때 사용 </h4>
+<h4>fn:replace() : 특정 문자열을 다른 문자열로 치환할 때 사용</h4>
+<hr>
+</body>
+</html>

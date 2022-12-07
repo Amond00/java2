@@ -1,0 +1,11 @@
+package builder;
+
+public class Jacket {
+	int number;
+	String name;
+	double size;
+	
+	private Jacket(int number, String name, double size){
+		
+	}
+}

@@ -1,0 +1,5 @@
+package aabvance_basic;
+
+public class InheritClass implements Interface {
+	
+}

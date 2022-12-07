@@ -1,0 +1,21 @@
+package aabvance_basic;
+
+public class BasicClass {
+	//멤버 변수(속성=필드)
+	int num;
+	String name;
+	int point;
+	
+	//생성자
+	public BasicClass() { }  //기본 생성자
+	public BasicClass(int num) { this.num = num; }
+	public BasicClass(int num, String name) {
+		this.num = num;
+		this.name = name;
+	}
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,18 @@
+package factoryMethod;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class MapEx {
+	public static void main(String[] args) {
+		LinkedList<String> lnkList = new LinkedList<String>();
+		lnkList.add("Dog");
+		lnkList.add("Cat");
+		
+		//lnkList = ["Dog", "Cat"]
+		Iterator<String> iter = lnkList.iterator();
+		while(iter.hasNext()){
+			
+		}
+	}
+}

@@ -1,0 +1,7 @@
+package facade;
+
+public class FacadeEx {
+    public static void main(String[] args) {
+        PageMaker.makeWelcomePage("kkt09072@naver.com", "welcome.html");
+    }
+}

@@ -1,0 +1,7 @@
+package factoryMethod;
+
+public class AnimalFactory {
+	static Animal create(String str){
+		
+	}
+}

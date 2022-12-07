@@ -1,0 +1,7 @@
+package singletone;
+
+public class SingletonEx {
+	public static void main(String[] args) {
+		Singleton ins1 = new Singleton();
+	}
+}

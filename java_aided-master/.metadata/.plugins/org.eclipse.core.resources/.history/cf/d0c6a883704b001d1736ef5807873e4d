@@ -1,0 +1,5 @@
+package aabvance_basic;
+
+public interface Interface {
+
+}

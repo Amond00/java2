@@ -1,0 +1,8 @@
+package singletone;
+
+public class Singleton {
+	static final Singleton instance = new Singleton();
+	
+	private Singleton() { }
+	
+}

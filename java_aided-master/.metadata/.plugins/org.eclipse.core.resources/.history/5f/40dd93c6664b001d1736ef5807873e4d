@@ -1,0 +1,10 @@
+package builder;
+
+public class JacketEx {
+	public static void main(String[] args) {
+		createJacket();
+	}
+	public static void createJacket(){
+		Jacket jacket = new Jacket.Builder().setNumber(1).setName("NackTiePro").setSize(174.3).build();
+	}
+}

@@ -1,0 +1,7 @@
+package aabvance_basic;
+
+public class ChildClass extends BasicClass {
+	public ChildClass(){ 
+		super(1,"lee",50);
+	}
+}

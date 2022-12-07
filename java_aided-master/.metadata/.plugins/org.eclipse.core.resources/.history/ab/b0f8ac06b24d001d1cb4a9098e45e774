@@ -1,0 +1,39 @@
+package prototype;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Employees  implements Cloneable{
+
+    private List<String> empList;
+	
+    public Employees(){
+        empList = new ArrayList<String>();
+    }
+	
+    public Employees(List<String> list){
+        this.empList=list;
+    }
+    
+    public void loadData(){
+    	//데이터베이스에서 모든 직원을 읽고 목록에 넣기
+        empList.add("Pankaj");
+        empList.add("Raj");
+        empList.add("David");
+        empList.add("Lisa");
+    }
+	
+    public List<String> getEmpList() {
+        return empList;
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException{
+        List<String> temp = new ArrayList<String>();
+        for(String s : this.empList){
+            temp.add(s);
+        }
+        return new Employees(temp);
+    }
+	
+}

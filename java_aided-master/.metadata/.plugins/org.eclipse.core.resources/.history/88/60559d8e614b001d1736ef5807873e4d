@@ -1,0 +1,10 @@
+package factoryMethod;
+
+public class AnimalFactory {
+	static Animal create(String str){
+		if(str.equals("Dog")){
+			return new Dog(str);
+		}
+		return null;
+	}
+}

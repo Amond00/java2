@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page import="java.util.*, java.lang.*" %>
+<%@ page import="java.text.*, java.net.InetAddress" %>
+<%@ page import="com.example.*" %>
+<%@ include file="common.jsp" %>
+<%
+	String name = "김기태";
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSTL(Java Standard Tag Library)</title>
+</head>
+<body>
+<h1>JSTL(Java Standard Tag Library) : 자바 표준 태그 라이브러리</h1>
+<h2>format - 태그가 fmt:으로 시작 </h2>
+<h3>fmt(포맷-format) 태그 - 통화, 날짜, 지역, 단위 등의 표시형식을 지정할 때 사용</h3>
+<p>fmt:태그 로 시작하여 /fmt:태그 로 끝남</p>
+<%-- <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %> --%>
+<h4>fmt:parseNumber - 통화, 백분율과 같은 숫자 형태의 데이터로 변환할 때 사용</h4>
+<h4>fmt:formatNumber - 통화, 백분율과 같은 숫자 형태의 표시형식을 지정할 때 사용</h4>
+<h4>fmt:parseDate - 날짜/시간과 같은 데이터로 변환할 때 사용</h4>
+<h4>fmt:formatDate - 날짜/시간과 같은 데이터 표시형식을 지정할 때 사용</h4>
+<h4>fmt:timeZone - 그 지역의 날짜/시간 표시형식으로 지정할 때 사용</h4>
+<h4>fmt:setTimeZone - 원하는 지역대로 변경할 때 사용</h4>
+<hr>
+	
+</body>
+</html>

@@ -1,0 +1,5 @@
+package adapter;
+
+public class HumanAdapter extends Human implements Student {
+
+}

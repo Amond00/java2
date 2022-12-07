@@ -1,0 +1,15 @@
+package bridge;
+
+import java.util.Random;
+
+public class CountDisplay extends Display {
+    private Random random = new Random();
+
+    public RandomCountDisplay(DisplayImpl impl) {
+        super(impl);
+    }
+
+    public void randomDisplay(int times) {
+        multiDisplay(random.nextInt(times));
+    }
+}

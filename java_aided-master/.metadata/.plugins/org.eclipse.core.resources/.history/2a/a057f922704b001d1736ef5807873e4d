@@ -1,0 +1,13 @@
+package aabvance_basic;
+
+public class InhClass extends AbstractClass {
+
+	@Override
+	public void method1() {	//추상체에서 상속받은 추상 메소드는 반드시 구현체에서 구현 내용을 기술
+		System.out.println("메소드1");
+	}
+
+	public void method2() {
+
+	}	
+}

@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<jsp:useBean id="b" class="com.example.Human"/>
+<jsp:setProperty property="*" name="b"/><!-- 폼으로 온 데이터를 접목시킬 인스턴스 설정 -->
+<jsp:setProperty property="country" name="b" value="<%=b.getCountry() %>" />
+<jsp:setProperty property="name" name="b" value="<%=b.getName() %>" />
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>08GetProperty</title>
+</head>
+<body>
+
+</body>
+</html>

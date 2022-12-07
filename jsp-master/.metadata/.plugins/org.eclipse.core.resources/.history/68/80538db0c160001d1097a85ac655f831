@@ -1,0 +1,100 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page import="java.util.*, java.lang.*" %>
+<%@ page import="java.text.*, java.net.InetAddress" %>
+<%@ page import="com.example.*" %>
+<%@ include file="common.jsp" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>06getJavaData - Java 객체를 EL로 받기</title>
+</head>
+<body>
+<h2>EL을 활용한 names 배열의 단순 출력</h2>
+<ul>
+	<li>${names[0] }</li>
+	<li>${names[1] }</li>
+	<li>${names[2] }</li>
+	<li>${names[3] }</li>
+</ul>
+<hr>
+<h2>EL+JSTL을 활용한 names 배열의 데이터 - 반복 출력(jstl - c:forEach)</h2>
+<ul>
+	<c:forEach items="${names }" var="name" varStatus="status">
+	<li>${status.count } : ${name }</li>
+	</c:forEach>
+</ul>
+<hr>
+<h2>EL+JSTL을 활용한 list의  반복출력</h2>
+<ul>
+	<c:forEach items="${list }" var="ls" varStatus="status">
+	<li>${status.count } : ${ls }</li>
+	</c:forEach>
+</ul>
+<hr>
+<h2>EL을 활용한 vo의 단순출력</h2>
+<ul>
+	<li> : ${vo.country }</li>
+	<li> : ${vo.name }</li>
+	<li> : ${vo.age }</li>
+	<li> : ${vo.hobby }</li>
+</ul>
+<hr>
+<h2>EL+JSTL을 활용한 humanList의  반복출력</h2>
+<c:forEach items="${humanList }" var="human" varStatus="status">
+<ul>
+	<li> : ${status.count }</li>
+	<li> : ${human.country }</li>
+	<li> : ${human.name }</li>
+	<li> : ${human.age }</li>
+	<li> : ${human.hobby }</li>
+</ul>
+<hr>
+</c:forEach>
+<br><hr><br>
+<h2>EL+JSTL을 활용한 map을 반복 출력</h2>
+<ul>
+	<c:forEach var="i" items="${map }">
+	<li>${i.key } : ${i.value }</li>
+	</c:forEach>
+</ul>
+<hr>
+<h2>EL+JSTL을 활용한 map2을 반복 출력</h2>
+<ul>
+	<c:forEach var="i" items="${map2 }">
+	<li>${i.key } : ${i.value }</li>
+	</c:forEach>
+</ul>
+<h2>표현식을 활용한 map의 반복 출력</h2>
+<ul>
+<%
+	HashMap<String, Integer> exMap = (HashMap<String, Integer>) request.getAttribute("map");
+	Iterator<String> keys = exMap.keySet().iterator();
+	while(keys.hasNext()){
+		String key = keys.next();
+%>
+	<li><%=key %> : <%=exMap.get(key) %></li>
+<%
+	}
+%>
+</ul>
+<hr>
+<h2>표현식을 활용한 map2의 반복 출력</h2>
+<ul>
+<%
+	HashMap<String, String> exMap2 = (HashMap<String, String>) request.getAttribute("map2");
+	Iterator<String> keys2 = exMap2.keySet().iterator();
+	while(keys2.hasNext()){
+		String key = keys2.next();
+%>
+	<li><%=key %> : <%=exMap.get(key) %></li>
+<%
+	}
+%>
+</ul>
+<hr>
+</body>
+</html>

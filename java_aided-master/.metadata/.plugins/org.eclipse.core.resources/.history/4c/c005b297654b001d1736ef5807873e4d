@@ -1,0 +1,16 @@
+package builder;
+
+public class Jacket {
+	int number;
+	String name;
+	double size;
+	
+	private Jacket(int number, String name, double size){
+		this.number = number;
+		this.name = name;
+		this.size = size;
+	}
+	
+	public static class Builder {
+		
+	}

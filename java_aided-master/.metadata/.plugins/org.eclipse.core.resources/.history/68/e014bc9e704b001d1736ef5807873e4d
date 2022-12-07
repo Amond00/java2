@@ -1,0 +1,6 @@
+package aabvance_basic;
+
+public interface Interface {
+	public void method1();
+	
+}

@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page import="java.util.*, java.lang.*" %>
+<%@ page import="java.text.*, java.net.InetAddress" %>
+<%@ page import="com.example.*" %>
+<%@ include file="common.jsp" %>
+<%
+	pageContext.setAttribute("pname", "김기태");
+	request.setAttribute("rname", "김태엽");
+	session.setAttribute("sname", "강병수");
+	application.setAttribute("aname", "김연정");
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>05ELDataForm</title>
+</head>
+<body>
+	<h2>EL FormData Transmission</h2>
+	<form action="" method="post">
+		
+	</form>
+</body>
+</html>
